@@ -1,0 +1,46 @@
+{
+    "name": "LaravelMysqli/laravel-mysqli-driver",
+    "type": "library",
+    "description": "MySQLi driver (connector) for Laravel 5.5 Eloquent database",
+    "keywords": ["Laravel", "Lumen", "MySQL", "mysqli", "driver", "connector"],
+    "homepage": "http://github.com/puneet6313/laravel-mysqli",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Puneet Singh",
+            "email": "puneet6313@gmail.com",
+            "homepage": "https://github.com/puneet6313"
+        }
+    ],
+	"minimum-stability": "stable",
+    "require": {
+        "php": ">=7.0",
+        "illuminate/contracts": "5.5.*",
+        "illuminate/database": "5.*",
+        "illuminate/support": "5.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.5",
+		"orchestra/testbench": "^3.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "LaravelMysqli\\LaravelEloquentMySQLi\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "LaravelMysqli\\LaravelEloquentMySQLi\\Tests\\": "tests/"
+        }
+    },
+	"extra": {
+    "laravel": {
+        "providers": [
+            "LaravelMysqli\\LaravelEloquentMySQLi\\MySQLiServiceProvider"
+        ],
+        "aliases": {
+            "MySQLiConnection": "Mysqli\\LaravelEloquentMySQLi\\MySQLiConnector"
+        }
+    }
+}
+}
