@@ -1,5 +1,5 @@
 {
-    "name": "LaravelMysqli/laravel-mysqli-driver",
+    "name": "laravel-mysqli/laravel-mysqli-driver",
     "type": "library",
     "description": "MySQLi driver (connector) for Laravel 5.5 Eloquent database",
     "keywords": ["Laravel", "Lumen", "MySQL", "mysqli", "driver", "connector"],
@@ -25,18 +25,18 @@
     },
     "autoload": {
         "psr-4": {
-            "LaravelMysqli\\LaravelEloquentMySQLi\\": "src/"
+            "laravel-mysqli\\LaravelEloquentMySQLi\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "LaravelMysqli\\LaravelEloquentMySQLi\\Tests\\": "tests/"
+            "laravel-mysqli\\LaravelEloquentMySQLi\\Tests\\": "tests/"
         }
     },
 	"extra": {
     "laravel": {
         "providers": [
-            "LaravelMysqli\\LaravelEloquentMySQLi\\MySQLiServiceProvider"
+            "laravel-mysqli\\LaravelEloquentMySQLi\\MySQLiServiceProvider"
         ],
         "aliases": {
             "MySQLiConnection": "Mysqli\\LaravelEloquentMySQLi\\MySQLiConnector"
